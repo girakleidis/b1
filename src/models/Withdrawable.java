@@ -5,10 +5,12 @@
  */
 package models;
 
+import Exceptions.MnhmonioException;
+
 /**
  *
  * @author g.irakleidis
  */
 public interface Withdrawable {
-    public boolean withdraw(double amount);
+    public boolean withdraw(double amount) throws MnhmonioException;
 }

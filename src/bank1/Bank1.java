@@ -18,7 +18,7 @@ public class Bank1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MnhmonioException {
         // TODO code application logic here
         VipUser vu =new VipUser("george",10000.0);
         SimpleUser su = new SimpleUser("nick", 10000.0);

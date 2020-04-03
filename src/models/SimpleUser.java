@@ -18,7 +18,7 @@ public class SimpleUser extends User{
     }
 
     @Override
-    public boolean withdraw(double amount) {
+    public boolean withdraw(double amount) throws MnhmonioException{
         if (amount <= balance){
         balance=balance-amount;
         return true;}

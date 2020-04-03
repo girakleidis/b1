@@ -9,7 +9,7 @@ package Exceptions;
  *
  * @author g.irakleidis
  */
-public class MnhmonioException extends RuntimeException {
+public class MnhmonioException extends Exception {
 
     public MnhmonioException(String message) {
     super(message);
