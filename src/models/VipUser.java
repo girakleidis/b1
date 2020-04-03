@@ -5,27 +5,20 @@
  */
 package models;
 
-import Exceptions.MnhmonioException;
-
 /**
  *
  * @author g.irakleidis
  */
-public class SimpleUser extends User{
+public class VipUser extends User{
 
-    public SimpleUser(String name, double balance) {
+    public VipUser(String name, double balance) {
         super(name, balance);
     }
 
     @Override
     public boolean withdraw(double amount) {
-        if (amount <= balance){
-        balance=balance-amount;
-        return true;}
-        else{
-        throw new MnhmonioException("404 not found");    
-         }
+        balance -=amount;
+        return true;
     }
-
     
 }
